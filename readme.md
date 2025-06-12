@@ -17,13 +17,22 @@ The objective is to build a predictive model that estimates the median value of 
 ## 📁 Project Structure
 
 boston-house-prediction/
+│── data            # Raw dataset files (optional if using sklearn)
+│├──housing.data
+│├──housing.names
 │
-├── housing.data, housing.names # Dataset (optional, if loading from sklearn)
-├── notebook/ # Jupyter notebooks for EDA and modeling
-├── Model Usage, Model Testing # Trained models saved as .pkl or .joblib
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
-└── Real Estate.ipynb # Main notebook for analysis and model building
+├── notebooks             # Jupyter Notebooks for EDA, modeling, usage, testing
+├── 01_Real_Estate_EDA.ipynb
+├── 02_Model_Testing.ipynb
+├── 03_Model_Usage.ipynb
+│
+├── models                # Saved trained models
+├── Real estate.joblib
+│
+├── requirements.txt        # List of dependencies
+├── README.md               # Project overview and instructions
+└── .gitignore              # Ignore checkpoints, model files, etc.
+
 
 
 ## 📊 Dataset Features
